@@ -18,7 +18,7 @@
 
     <header class="max-w-6xl mx-auto px-6 py-8 flex justify-between items-center">
         <a href="#" class="text-xl font-semibold tracking-widest uppercase">Janeth</a>
-        <a href="mailto:tu-correo@email.com" class="border-b border-black pb-1 text-sm font-medium hover:opacity-60 transition">Contacto</a>
+        <a href="#contacto" class="border-b border-black pb-1 text-sm font-medium hover:opacity-60 transition">Contacto</a>
     </header>
 
     <section class="max-w-4xl mx-auto px-6 py-20 md:py-32 text-center">
@@ -28,7 +28,7 @@
         <p class="text-gray-500 text-lg md:text-xl max-w-xl mx-auto mb-10 font-light">
             Especializada en crear contenido visual estratégico y minimalista para redes sociales.
         </p>
-        <a href="mailto:tu-correo@email.com" class="inline-block bg-[#111111] text-white px-8 py-3 text-sm font-medium uppercase tracking-wider hover:bg-gray-800 transition rounded-none">
+        <a href="#contacto" class="inline-block bg-[#111111] text-white px-8 py-3 text-sm font-medium uppercase tracking-wider hover:bg-gray-800 transition rounded-none">
             Hablemos de tu proyecto
         </a>
     </section>
@@ -72,13 +72,29 @@
         </div>
     </section>
 
-    <footer class="bg-[#111111] text-white py-20 text-center">
-        <div class="max-w-2xl mx-auto px-6">
+    <footer id="contacto" class="bg-[#111111] text-white py-20 text-center">
+        <div class="max-w-xl mx-auto px-6">
             <h2 class="text-2xl font-light mb-4">¿Listo para transformar tus redes?</h2>
-            <p class="text-gray-400 text-sm mb-8 max-w-sm mx-auto">Cuéntame tu idea y la haremos realidad juntos de forma limpia y profesional.</p>
-            <a href="mailto:tu-correo@email.com" class="text-lg border-b border-white pb-1 hover:text-gray-300 transition font-medium">
-                tu-correo@email.com
-            </a>
+            <p class="text-gray-400 text-sm mb-10 max-w-sm mx-auto">Cuéntame tu idea y la haremos realidad juntos de forma limpia y profesional.</p>
+            
+            <form action="https://formspree.io/f/mrewoldo" method="POST" class="text-left space-y-6">
+                <div class="flex flex-col">
+                    <label class="text-xs uppercase tracking-widest text-gray-400 mb-2 font-medium">Tu email:</label>
+                    <input type="email" name="email" required class="bg-transparent border border-gray-700 px-4 py-3 text-sm focus:outline-none focus:border-white transition rounded-none text-white">
+                </div>
+                
+                <div class="flex flex-col">
+                    <label class="text-xs uppercase tracking-widest text-gray-400 mb-2 font-medium">Tu mensaje:</label>
+                    <textarea name="message" rows="4" required class="bg-transparent border border-gray-700 px-4 py-3 text-sm focus:outline-none focus:border-white transition rounded-none text-white resize-none"></textarea>
+                </div>
+                
+                <div class="pt-2">
+                    <button type="submit" class="w-full bg-white text-[#111111] py-3 text-sm font-medium uppercase tracking-wider hover:bg-gray-200 transition rounded-none cursor-pointer">
+                        Enviar mensaje
+                    </button>
+                </div>
+            </form>
+
             <p class="text-xs text-gray-600 mt-16">© 2026 Janeth. Todos los derechos reservados.</p>
         </div>
     </footer>
